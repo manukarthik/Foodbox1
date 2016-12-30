@@ -5668,7 +5668,7 @@ a.list-group-item-danger.active:focus {
 }
 .well {
   min-height: 20px;
-  padding: 19px;
+  /*padding: 19px;*/
   margin-bottom: 20px;
   background-color: transparent;
   border-radius: 4px;
