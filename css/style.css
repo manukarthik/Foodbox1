@@ -91,7 +91,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 }
 /* Navigation */
 #menu {
-	padding: 10px;
+	padding: 0px;
 	transition: all 0.8s;
 }
 #menu.navbar-default {
@@ -184,9 +184,13 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 /* Header Section */
 .intro {
 	display: table;
-	width: 100%;
+	width:100%;
 	height:800px;
 	padding: 0;
+
+}
+.img{
+	max-width: 100%;
 	background: url(../img/222.jpg) no-repeat bottom center;
 	background-color: #e5e5e5;
 	-webkit-background-size: cover;
@@ -206,7 +210,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	color: #fff;
 	font-size: 10em;
 	font-weight: 700;
-	margin: 
+	margin:
 	margin-top: 0;
 	margin-bottom: 10px;
 }
@@ -283,6 +287,7 @@ header .intro-text {
 	margin: 0 20px 80px;
 }
 #restaurant-menu .menu-section-title {
+	padding-top: 25px;
 	font-size: 26px;
 	display: block;
 	font-weight: 500;
@@ -524,6 +529,36 @@ input.btn.btn-lg:focus {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
 }
+/*test*/
+.btn {
+  transition: all 0.4s;
+}
+
+.top.content {
+top:0px;
+}
+.bottom.content {
+
+  top:50px;
+
+
+
+
+}
+.btn:hover .top {
+top:-50px;
+}
+.btn:hover .bottom {
+top:0px;
+}
+.btn .content {
+transition:top 1s;
+  overflow:hidden;
+}
+
+
+
+/*test end*/
 button.btn {
     width: 40%;
     height: 60px;
@@ -531,6 +566,12 @@ button.btn {
     background-color: #ff8f00;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
+    transition: all 0.5s;
+
+   -moz-box-shadow:    inset 0 0 2px #000000;
+   -webkit-box-shadow: inset 0 0 2px #000000;
+   box-shadow:         inset 0 0 2px #ff6f00;
+
 }
 button.btn:hover{
 	background-color: #ffa000;
@@ -540,6 +581,20 @@ button.btn:hover{
     color: #999;
 }
 /*end*/
+.stitched {
+   padding: 20px;
+   margin: 2px;
+  /* background: #ff0030;*/
+   color: #ff8f00;
+   font-size: 21px;
+   font-weight: bold;
+   line-height: 1.3em;
+   border: 2px dashed #fff9c4;
+   border-radius: 0px;
+   box-shadow: 0 0 0 4px #ff8f00, 2px 1px 6px 4px #ff8f00;
+   text-shadow: -1px -1px #fff;
+   font-weight: normal;
+}
 #call-reservation {
 	padding: 90px 0;
 	color: #fff;
@@ -696,4 +751,96 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9c667', end
 }
 #footer a:hover {
 	color: #333;
+}
+@media screen and (max-width: 362px){
+	.img{
+	    width: 50%;
+		height:auto;
+		background-size: contain;
+	}
+}
+/* Menu cards*/
+.card {
+	border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    height: 300px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.col-center {
+	margin: 0 auto;
+	float: none !important;
+}
+/*For testimonials*/
+.carousel {
+	margin: 50px auto;
+	padding: 0 70px;
+}
+.carousel .item {
+	color: #999;
+	font-size: 14px;
+    text-align: center;
+	overflow: hidden;
+    min-height: 290px;
+}
+.carousel .item .img-box {
+	width: 135px;
+	height: 135px;
+	margin: 0 auto;
+	padding: 5px;
+	border: 1px solid #ddd;
+	border-radius: 50%;
+}
+.carousel .img-box img {
+	width: 100%;
+	height: 100%;
+	display: block;
+	border-radius: 50%;
+}
+.carousel .testimonial {
+	padding: 30px 0 10px;
+}
+.carousel .overview {	
+	font-style: italic;
+}
+.carousel .overview b {
+	text-transform: uppercase;
+	color: #7AA641;
+}
+.carousel .carousel-control {
+	width: 40px;
+    height: 40px;
+    margin-top: -20px;
+    top: 50%;
+	background: none;
+}
+.carousel-control i {
+    font-size: 68px;
+	line-height: 42px;
+    position: absolute;
+    display: inline-block;
+	color: rgba(0, 0, 0, 0.8);
+    text-shadow: 0 3px 3px #e6e6e6, 0 0 0 #000;
+}
+.carousel .carousel-indicators {
+	bottom: -40px;
+}
+.carousel-indicators li, .carousel-indicators li.active {
+	width: 10px;
+	height: 10px;
+	margin: 1px 3px;
+	border-radius: 50%;
+}
+.carousel-indicators li {	
+	background: #999;
+	border-color: transparent;
+	box-shadow: inset 0 2px 1px rgba(0,0,0,0.2);
+}
+.carousel-indicators li.active {	
+	background: #555;		
+	box-shadow: inset 0 2px 1px rgba(0,0,0,0.2);
 }
