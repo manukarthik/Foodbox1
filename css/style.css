@@ -189,15 +189,19 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	padding: 0;
 
 }
-.img{
+
+.side-registration{
+    height: 220px;
+    position: absolute;
+}
+/*.img{
 	max-width: 100%;
-	background: url(../img/222.jpg) no-repeat bottom center;
 	background-color: #e5e5e5;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
 	-o-background-size: cover;
-}
+}*/
 .intro .overlay {
 	background: rgba(0,0,0,0.4);
 	height: 70px;
@@ -843,4 +847,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9c667', end
 .carousel-indicators li.active {	
 	background: #555;		
 	box-shadow: inset 0 2px 1px rgba(0,0,0,0.2);
+}
+
+#myCarousel-header {
+	margin :0 !important;
+	padding:0 !important;
+}
+
+.item > img, .carousel-inner > .item > a > img{
+	height: 100vh !important;
+	width : 100% !important;
 }
