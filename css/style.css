@@ -1,11 +1,12 @@
 body, html {
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Lato', sans-serif;
 	text-rendering: optimizeLegibility !important;
 	-webkit-font-smoothing: antialiased !important;
 	color: #777;
 	font-weight: 300;
 	width: 100% !important;
 	height: 100% !important;
+	margin: 0 auto;
 }
 h2 {
 	margin: 0 0 20px 1px;
@@ -190,18 +191,15 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 
 }
 
-.side-registration{
-    height: 220px;
-    position: absolute;
-}
-/*.img{
+.img{
 	max-width: 100%;
+	background: url(../img/222.jpg) no-repeat bottom center;
 	background-color: #e5e5e5;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
 	-o-background-size: cover;
-}*/
+}
 .intro .overlay {
 	background: rgba(0,0,0,0.4);
 	height: 70px;
@@ -277,8 +275,8 @@ header .intro-text {
 	color: #fff;
 }
 #restaurant-menu img {
-	width: 300px;
-	box-shadow: 15px 0 #a7c44c;
+	width: 150px;
+    height: 250px;
 }
 #restaurant-menu h3 {
 	padding: 10px 0;
@@ -790,6 +788,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9c667', end
     text-align: center;
 	overflow: hidden;
     min-height: 290px;
+    padding-top: 60px;
 }
 .carousel .item .img-box {
 	width: 135px;
@@ -857,4 +856,34 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9c667', end
 .item > img, .carousel-inner > .item > a > img{
 	height: 100vh !important;
 	width : 100% !important;
+}
+@-webkit-keyframes swinging{
+	0%{-webkit-transform: rotate(10deg);}
+	50%{-webkit-transform: rotate(-5deg)}
+	100%{-webkit-transform: rotate(10deg);}
+}
+
+@keyframes swinging{
+	0%{transform: rotate(10deg);}
+	50%{transform: rotate(-5deg)}
+	100%{transform: rotate(10deg);}
+}
+
+.swingimage{
+	position: absolute;
+	left: 0;
+	-webkit-transform-origin: 50% 0;
+	transform-origin: 50% 0;
+	-webkit-animation: swinging 3.5s ease-in-out forwards infinite;
+	animation: swinging 3.5s ease-in-out forwards infinite;
+}
+
+.swingimageshift{
+	position: absolute;
+	left: 50px;
+	margin-top: 30px;
+	-webkit-transform-origin: 35% 0;
+	transform-origin: 35% 0;
+	-webkit-animation: swinging 3.5s ease-in-out forwards infinite;
+	animation: swinging 3.5s ease-in-out forwards infinite;
 }
