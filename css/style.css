@@ -6,7 +6,9 @@ body, html {
 	font-weight: 300;
 	width: 100% !important;
 	height: 100% !important;
-	margin: 0 auto;
+	margin: 0;
+	padding:0;
+	border:0;
 }
 h2 {
 	margin: 0 0 20px 1px;
@@ -182,6 +184,10 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	color: #fff;
 	background-color: #ff8f00;
 }
+
+.foodbox_title {
+	margin-top:20px;
+}
 /* Header Section */
 .intro {
 	display: table;
@@ -191,6 +197,8 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 
 }
 
+
+
 .img{
 	max-width: 100%;
 	background: url(../img/222.jpg) no-repeat bottom center;
@@ -199,6 +207,14 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	-moz-background-size: cover;
 	background-size: cover;
 	-o-background-size: cover;
+}
+
+@media screen and (max-width: 362px){
+.img {
+     width: 100% !important; 
+     height: 300px !important; 
+     background-size: cover !important; 
+}
 }
 .intro .overlay {
 	background: rgba(0,0,0,0.4);
@@ -234,12 +250,13 @@ header .intro-text {
 }
 /* About Section */
 #about {
-	padding: 120px 0;
+	padding: 46px 0;
 }
 #about h3 {
 	font-size: 20px;
 }
 #about .about-text {
+	margin-bottom:30px;
 	margin-left: 10px;
 }
 #about .about-img {
@@ -585,7 +602,7 @@ button.btn:hover{
 /*end*/
 .stitched {
    padding: 20px;
-   margin: 2px;
+   margin: 2px 2px 7px 2px;
   /* background: #ff0030;*/
    color: #ff8f00;
    font-size: 21px;
@@ -730,6 +747,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9c667', end
 }
 #footer .social {
 	margin: 20px 0 30px 0;
+
 }
 #footer .social ul li {
 	display: inline-block;
@@ -742,7 +760,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9c667', end
 	transition: all 0.3s;
 }
 #footer .social i.fa:hover {
-	color: #eee;
+	  -webkit-transform: scale(1.5);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
 }
 #footer p {
 	font-size: 15px;
@@ -779,7 +799,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9c667', end
 }
 /*For testimonials*/
 .carousel {
-	margin: 50px auto;
+	margin: 0 auto;
 	padding: 0 70px;
 }
 .carousel .item {
@@ -788,7 +808,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9c667', end
     text-align: center;
 	overflow: hidden;
     min-height: 290px;
-    padding-top: 60px;
+    padding-top: 10px;
 }
 .carousel .item .img-box {
 	width: 135px;
@@ -818,7 +838,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9c667', end
 	width: 40px;
     height: 40px;
     margin-top: -20px;
-    top: 50%;
+    top: 28%;
 	background: none;
 }
 .carousel-control i {
@@ -886,4 +906,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9c667', end
 	transform-origin: 35% 0;
 	-webkit-animation: swinging 3.5s ease-in-out forwards infinite;
 	animation: swinging 3.5s ease-in-out forwards infinite;
+}
+
+#footer .social i.fa-facebook:hover {
+  color: #337ab7;
+}
+
+#footer .social i.fa-instagram:hover {
+  color: red;
+}
+
+#email:hover {
+ color: white;
+ text-decoration: underline;
 }
