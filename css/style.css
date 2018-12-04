@@ -1,5 +1,5 @@
 body, html {
-	font-family: 'Lato', sans-serif;
+	font-family: 'Raleway', sans-serif !important;
 	text-rendering: optimizeLegibility !important;
 	-webkit-font-smoothing: antialiased !important;
 	color: #777;
@@ -215,7 +215,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 
 .img{
 	max-width: 100%;
-	background: url(../img/banner_image.png) no-repeat bottom center;
+	background: url(../img/fb-banner.jpg) no-repeat bottom center;
 	background-color: #e5e5e5;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -358,7 +358,7 @@ header .intro-text {
 }
 /* Portfolio Section */
 #portfolio {
-	padding: 0 0 120px 0;
+	padding: 0 0 40px 0;
 }
 #portfolio .section-title {
 	background: #444 url(../img/333.jpg) center center no-repeat fixed;
@@ -481,8 +481,10 @@ ol.type li a:hover {
 /* Team Section */
 #team {
 	color: #fff;
-	background: #444 url(../img/team-bg.jpg) center top no-repeat fixed;
-	background-size: cover;
+	width:100vw;
+	height: 100vh;
+	background: #444 url(../img/team-bg.jpg) no-repeat;
+	background-size: contain;
 }
 #team .overlay {
 	padding: 120px 0 80px 0;
@@ -832,6 +834,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9c667', end
     min-height: 290px;
     padding-top: 10px;
 }
+
 .carousel .item .img-box {
 	width: 135px;
 	height: 135px;
@@ -849,6 +852,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9c667', end
 .carousel .testimonial {
 	padding: 30px 0 10px;
 }
+
+.testimonal p{
+	font-size: 18px;
+}
+
 .carousel .overview {	
 	font-style: italic;
 }
@@ -872,7 +880,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9c667', end
     text-shadow: 0 3px 3px #e6e6e6, 0 0 0 #000;
 }
 .carousel .carousel-indicators {
-	bottom: -40px;
+	bottom: 18px;
 }
 .carousel-indicators li, .carousel-indicators li.active {
 	width: 10px;
@@ -895,39 +903,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9c667', end
 	padding:0 !important;
 }
 
+
 .item > img, .carousel-inner > .item > a > img{
 	height: 100vh !important;
 	width : 100% !important;
-}
-@-webkit-keyframes swinging{
-	0%{-webkit-transform: rotate(10deg);}
-	50%{-webkit-transform: rotate(-5deg)}
-	100%{-webkit-transform: rotate(10deg);}
-}
-
-@keyframes swinging{
-	0%{transform: rotate(10deg);}
-	50%{transform: rotate(-5deg)}
-	100%{transform: rotate(10deg);}
-}
-
-.swingimage{
-	position: absolute;
-	left: 0;
-	-webkit-transform-origin: 50% 0;
-	transform-origin: 50% 0;
-	-webkit-animation: swinging 3.5s ease-in-out forwards infinite;
-	animation: swinging 3.5s ease-in-out forwards infinite;
-}
-
-.swingimageshift{
-	position: absolute;
-	left: 50px;
-	margin-top: 30px;
-	-webkit-transform-origin: 35% 0;
-	transform-origin: 35% 0;
-	-webkit-animation: swinging 3.5s ease-in-out forwards infinite;
-	animation: swinging 3.5s ease-in-out forwards infinite;
 }
 
 #footer .social i.fa-facebook:hover {
@@ -941,4 +920,26 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9c667', end
 #email:hover {
  color: white;
  text-decoration: underline;
+}
+
+.call-button {
+	background: transparent !important;
+	position: relative;
+    left: -91px;
+    top: 199px;
+	height: 65px !important;
+	width: 65px !important;
+	border-radius: 50% !important;
+}
+
+.fb-register{
+	border: 1px solid black;
+    background-color: transparent;
+    color: black;
+    padding: 10px 25px 10px 25px;
+}
+
+.fb-register:hover{
+	border: 1px solid #ffa000;
+    background-color: #ff8f00
 }
