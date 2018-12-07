@@ -228,6 +228,9 @@ margin-top: -0.2em;
 }
 
 @media screen and (max-width: 362px){
+.navbar-default .navbar-collapse {
+	margin-top: 18px !important;
+}
 .img {
      width: 100% !important; 
      height: 300px !important; 
@@ -917,6 +920,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9c667', end
   color: red;
 }
 
+#footer .social i.fa-whatsapp:hover {
+   color: #25d366;
+}
+
 #email:hover {
  color: white;
  text-decoration: underline;
@@ -925,11 +932,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9c667', end
 .call-button {
 	background: transparent !important;
 	position: relative;
-    left: -91px;
-    top: 199px;
+    /*left: -91px;
+    top: 199px;*/
 	height: 65px !important;
 	width: 65px !important;
 	border-radius: 50% !important;
+	  -webkit-animation: rota 5s linear infinite;
 }
 
 .fb-register{
@@ -942,4 +950,95 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9c667', end
 .fb-register:hover{
 	border: 1px solid #ffa000;
     background-color: #ff8f00
+}
+
+.fa-phone {
+	color: #fff;
+	font-size: 20px;
+}
+
+@-webkit-keyframes wrench {
+  0% {
+    -webkit-transform: rotate(-12deg);
+    transform: rotate(-12deg);
+  }
+
+  8% {
+    -webkit-transform: rotate(12deg);
+    transform: rotate(12deg);
+  }
+
+  10% {
+    -webkit-transform: rotate(24deg);
+    transform: rotate(24deg);
+  }
+
+  18% {
+    -webkit-transform: rotate(-24deg);
+    transform: rotate(-24deg);
+  }
+
+  20% {
+    -webkit-transform: rotate(-24deg);
+    transform: rotate(-24deg);
+  }
+
+  28% {
+    -webkit-transform: rotate(24deg);
+    transform: rotate(24deg);
+  }
+
+  30% {
+    -webkit-transform: rotate(24deg);
+    transform: rotate(24deg);
+  }
+
+  38% {
+    -webkit-transform: rotate(-24deg);
+    transform: rotate(-24deg);
+  }
+
+  40% {
+    -webkit-transform: rotate(-24deg);
+    transform: rotate(-24deg);
+  }
+
+  48% {
+    -webkit-transform: rotate(24deg);
+    transform: rotate(24deg);
+  }
+
+  50% {
+    -webkit-transform: rotate(24deg);
+    transform: rotate(24deg);
+  }
+
+  58% {
+    -webkit-transform: rotate(-24deg);
+    transform: rotate(-24deg);
+  }
+
+  60% {
+    -webkit-transform: rotate(-24deg);
+    transform: rotate(-24deg);
+  }
+
+  68% {
+    -webkit-transform: rotate(24deg);
+    transform: rotate(24deg);
+  }
+
+  75% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+
+.faa-wrench.animated,
+.faa-wrench.animated-hover:hover> .faa-wrench {
+  -webkit-animation: wrench 2.5s ease infinite;
+  animation: wrench 2.5s ease infinite;
+  transform-origin-x: 90%;
+  transform-origin-y: 35%;
+  transform-origin-z: initial;
 }
