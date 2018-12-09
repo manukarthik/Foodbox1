@@ -1107,6 +1107,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9c667', end
 	margin-bottom: 50px;
 }
 
+.order_timing{
+	position: relative;
+	bottom: -68px;
+	font-weight: 600;
+}
 @media screen and (max-width: 426px){
 	.fb-register {
 		width: 100% !important;
