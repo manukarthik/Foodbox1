@@ -951,7 +951,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9c667', end
 	height: 65px !important;
 	width: 65px !important;
 	border-radius: 50% !important;
-	  -webkit-animation: rota 5s linear infinite;
+	border-top: 16px solid #3498db;
 }
 
 .telephone {
@@ -1111,6 +1111,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9c667', end
 	position: relative;
 	bottom: -68px;
 	font-weight: 600;
+	font-size: 14px;
 }
 @media screen and (max-width: 426px){
 	.fb-register {
